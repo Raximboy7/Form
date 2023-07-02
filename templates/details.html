@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ mymember.firstname }} {{ mymember.lastname }}</title>
+
+</head>
+<body>
+
+<h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+  
+<p>Phone: {{ mymember.phone }}</p>
+<p>Member since: {{ mymember.data }}</p>
+<p>Member slug: {{ mymember.slug }}</p>
+
+<hr>
+
+<p>Back to <a href="{% url 'members' %}">Members</a></p>
+
+</body>
+</html>                  

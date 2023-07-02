@@ -1,0 +1,8 @@
+<form>
+    <form action="{% url 'login' %}" method="POST" >
+        {% csrf_token %}
+    <input type="text" name="username" placeholder="login kriting!">
+    <input type="password" name="password" placeholder="password kriting!">
+    <input type="submit" class="btn btn-primary">Kriting</input>
+  </form>
+</form>

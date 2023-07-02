@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Azolar</title>
+</head>
+<body>
+
+<h1>Azolar</h1>
+<a href="{% url 'login' %}">Log in</a>
+<a href="{% url 'register' %}">Ro'yxatdan o'tish</a>
+{% comment %} <a href="{% url 'logaut_user' %}">Log out</a> {% endcomment %}
+  
+<ul>
+  {% for x in mymembers %}
+    <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>                  
